@@ -12,6 +12,7 @@ def home():
 @app.route('/hello', methods=['GET', 'POST'])
 def hello():
     """
+    Returns a simple 'Hello, World!' greeting.
     Greet the user with their name
 
     Args:
