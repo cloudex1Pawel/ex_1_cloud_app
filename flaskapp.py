@@ -7,12 +7,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    """
+    Returns a simple 'Hello, World!' greeting.
+    """
     return "Hello, World!"
 
 @app.route('/hello', methods=['GET', 'POST'])
 def hello():
     """
-    Returns a simple 'Hello, World!' greeting.
     Greet the user with their name
 
     Args:
