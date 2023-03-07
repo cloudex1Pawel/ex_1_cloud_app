@@ -1,16 +1,16 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "hello world"
+    return "Hello, World!"
 
-@app.route('/hello', methods=['GET','POST'])
+@app.route('/hello', methods=['GET', 'POST'])
 def hello():
     if request.method == "POST":
         name = request.form['name']
-        return "Hello, " + name
+        return f"Hello, {name}!"
     return '''
         <form method="post">
             <label for="name">Name:</label>
