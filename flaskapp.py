@@ -1,7 +1,7 @@
 """
 Flask application for greeting users
 """
-from flask import Flask, render_template, request
+from flask import Flask, request
 
 app = Flask(__name__)
 
