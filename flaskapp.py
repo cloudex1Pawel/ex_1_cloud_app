@@ -16,7 +16,7 @@ def hello():
     """
     if request.method == "POST":
         name = request.form['name']
-        return f"Hello, {name}!"
+    return f"Hello, {name}!"
     return '''
         <form method="post">
             <label for="name">Name:</label>
