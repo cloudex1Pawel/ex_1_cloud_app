@@ -11,9 +11,9 @@ def home():
 
 @app.route('/hello', methods=['GET', 'POST'])
 def hello():
-    """
-    Greet the user with their name
-    """
+"""
+Greet the user with their name
+"""
     if request.method == "POST":
         name = request.form['name']
         return f"Hello, {name}!"
